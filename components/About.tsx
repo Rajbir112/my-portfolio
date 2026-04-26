@@ -54,7 +54,7 @@ export default function About() {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 50 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } },
+    show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
 
   return (
@@ -99,7 +99,7 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0, x: -60 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.9, ease: [0.76, 0, 0.24, 1] }}
+            transition={{ duration: 0.9 }}
             className="relative flex justify-center"
           >
             <div className="relative">
@@ -180,7 +180,7 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0, x: 60 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.9, ease: [0.76, 0, 0.24, 1], delay: 0.2 }}
+            transition={{ duration: 0.9, delay: 0.2 }}
           >
             <p className="text-lg md:text-xl text-slate-300 leading-relaxed mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
               I&apos;m a passionate{" "}

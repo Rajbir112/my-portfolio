@@ -76,7 +76,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
       ref={cardRef}
       initial={{ opacity: 0, y: 80 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.9, delay: index * 0.2, ease: [0.76, 0, 0.24, 1] }}
+      transition={{ duration: 0.9, delay: index * 0.2 }}
       className="relative"
     >
       <motion.div
@@ -222,7 +222,7 @@ export default function Projects() {
   };
   const itemVariants = {
     hidden: { opacity: 0, y: 40 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] } },
+    show: { opacity: 1, y: 0, transition: { duration: 0.7 } },
   };
 
   return (

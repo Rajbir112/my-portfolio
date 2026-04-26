@@ -103,7 +103,7 @@ export default function CustomCursor() {
             opacity: isClicking ? 0.5 : 0.6,
             borderColor: isHovering ? "#00f5ff" : "#a855f7",
           }}
-          transition={{ duration: 0.3, ease: "easeOut" }}
+          transition={{ duration: 0.3 }}
           className="w-10 h-10 rounded-full border-2 border-purple-500"
           style={{
             boxShadow: isHovering

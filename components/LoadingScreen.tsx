@@ -29,7 +29,7 @@ export default function LoadingScreen() {
           key="loader"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, scale: 1.05 }}
-          transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+          transition={{ duration: 0.8 }}
           className="fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-[#030308]"
         >
           {/* Background orbs */}

@@ -81,7 +81,7 @@ export default function Contact() {
   };
   const itemVariants = {
     hidden: { opacity: 0, y: 40 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] } },
+    show: { opacity: 1, y: 0, transition: { duration: 0.7 } },
   };
 
   const inputStyle = (name: string) => ({
@@ -137,7 +137,7 @@ export default function Contact() {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ delay: 0.3, duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+            transition={{ delay: 0.3, duration: 0.8 }}
             className="flex flex-col"
           >
             {/* Email card */}
@@ -215,7 +215,7 @@ export default function Contact() {
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ delay: 0.4, duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+            transition={{ delay: 0.4, duration: 0.8 }}
           >
             <form onSubmit={handleSubmit} className="flex flex-col gap-5">
               {/* Name */}
